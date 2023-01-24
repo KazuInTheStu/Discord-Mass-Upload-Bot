@@ -8,7 +8,7 @@ bot = commands.Bot(command_prefix='#')
 
 @bot.command()
 async def upload(ctx, category_id: int, number_of_files: int=None): # Can limit the amount of files sent from each subfolder, but also decide which category to send them in, in this case the file amount is optional
-    log_channel_id = 1060410778139766835 # Replace this with the ID of the channel where you want to send embeds
+    log_channel_id =  # Replace this with the ID of the channel where you want to send embeds
     category = ctx.guild.get_channel(category_id)
     for folder in os.listdir('media'): # name of the folder where subfolders filled with files are gonna be 
         channel = discord.utils.get(ctx.guild.text_channels, name=folder)
@@ -21,7 +21,7 @@ async def upload(ctx, category_id: int, number_of_files: int=None): # Can limit 
             file_path = os.path.join('media', folder, file)
             filename, extension = os.path.splitext(file)
             # Send the file to the channel first
-            message = await channel.send(file=discord.File(file_path, filename=f'leakworld{extension}'))
+            message = await channel.send(file=discord.File(file_path, filename=f'uploadedthankstokazu{extension}'))
             # Get the URL of the file from the message
             file_url = message.attachments[0].url
             # Create the embed
