@@ -1,23 +1,39 @@
-# Discord-Mass-Upload-Bot
-This bot allows you to mass upload files by creating different channels.
+# Discord Media Upload Bot
 
+This bot is designed to organize your files and upload them to your Discord server. It is capable of creating new channels in the specified category and uploading files from local subfolders. It also supports a configurable limit on the number of files uploaded from each folder.
 
+## Table of Contents
 
-## Features :
-• Creates channels named after the subfolders found in the media folder
+1. [Features](#features)
+2. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+3. [Usage](#usage)
 
-• Renames all files before upload
+## Features
 
-• Checks if files are under the limit before starting to upload them
+- Scans and uploads files from local directories.
+- Creates new channels as necessary.
+- Allows a user-defined limit on the number of files uploaded from each folder.
+- Provides logs with embeds about file uploads and new channels.
+- Files can be deleted after upload (optional).
 
-• Sends an embed with a random attachment from that channel (Preferably pictures) When a new channel is created
+## Getting Started
 
-• Deletes files after uploading them
+### Prerequisites
 
-• Can send a specific amount of files from each subfolder
+1. Python 3.7 or later
+2. discord.py library
+3. A Discord bot token
 
-• Can be used on different categories without having to restart
+### Installation
 
-• Can change subfolders on the fly after finishing to upload
+1. Clone the repo: `git clone [https://github.com/your-username/discord-upload-bot.git](https://github.com/KazuInTheStu/Discord-Mass-Upload-Bot.git)`
+2. Install necessary Python packages: `pip install -r requirements.txt`
+3. Enter your Discord bot token in `bot.run('insert-bot-token-here')`
 
-• Stays under discord's limits
+## Usage
+
+- Command: `#upload <category-id> [number-of-files]`
+
+This command uploads a certain number of files (optional parameter) from each subfolder to the specified category.
