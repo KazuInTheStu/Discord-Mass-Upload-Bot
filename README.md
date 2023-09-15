@@ -28,7 +28,7 @@ This bot is designed to organize your files and upload them to your Discord serv
 
 ### Installation
 
-1. Clone the repo: `git clone [https://github.com/KazuInTheStu/Discord-Mass-Upload-Bot.git](https://github.com/KazuInTheStu/Discord-Mass-Upload-Bot.git)`
+1. Clone the repo: `git clone https://github.com/KazuInTheStu/Discord-Mass-Upload-Bot.git`
 2. Install necessary Python packages: `pip install -r requirements.txt`
 3. Enter your Discord bot token in `bot.run('insert-bot-token-here')`
 
